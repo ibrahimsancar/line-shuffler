@@ -108,31 +108,31 @@ git push -u origin main
    Release title: 🚀 Line Shuffler v1.0.0 - Initial Release
 
    Description:
-   ## 🎉 İlk Stabil Sürüm
+   ## 🎉 First Stable Release
 
-   Line Shuffler'ın ilk stabil sürümü! Modern, özellik dolu bir masaüstü uygulaması.
+   The first stable release of Line Shuffler! A modern, feature-rich desktop application for text line shuffling.
 
-   ### ✨ Özellikler
-   - 🔀 Fisher-Yates algoritması ile gerçek rastgele karıştırma
-   - 📌 Sabit pozisyon satırları desteği
-   - 🎨 2025 modern dark theme tasarımı
-   - 📋 Akıllı pano entegrasyonu
-   - 📁 Dosya sürükle-bırak desteği
-   - ↩️ Geri alma/yineleme sistemi
-   - ⌨️ Klavye kısayolları
+   ### ✨ Features
+   - 🔀 True randomization with Fisher-Yates shuffle algorithm
+   - 📌 Fixed position lines support for flexible shuffling
+   - 🎨 Modern 2025 dark theme design
+   - 📋 Smart clipboard integration with auto-paste
+   - 📁 File drag & drop support for easy workflow
+   - ↩️ Undo/redo system with full history management
+   - ⌨️ Complete keyboard shortcuts support
 
-   ### 🖥️ Desteklenen Platformlar
+   ### 🖥️ Supported Platforms
    - Windows (x64, x86)
    - macOS (Intel, Apple Silicon)
    - Linux (x64)
 
-   ### 📦 İndirme
-   Uygulamayı build etmek için:
+   ### 📦 Download
+   To build the application:
    ```bash
    npm install
-   npm run build:win    # Windows için
-   npm run build:mac    # macOS için
-   npm run build:linux  # Linux için
+   npm run build:win    # For Windows
+   npm run build:mac    # For macOS
+   npm run build:linux  # For Linux
    ```
    ```
 4. **"Publish release"** butonuna tıklayın
