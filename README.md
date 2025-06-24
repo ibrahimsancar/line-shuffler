@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="assets/logo.png" alt="Line Shuffler Logo" width="200" height="200">
-  
+
   **A modern, feature-rich desktop application for shuffling text lines with advanced customization options.**
 </div>
 
@@ -55,7 +55,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/ibotoo/line-shuffler.git
+   git clone https://github.com/ibrahimsancar/line-shuffler.git
    cd line-shuffler
    ```
 
@@ -75,7 +75,7 @@
 # Build for Windows
 npm run build:win
 
-# Build for macOS  
+# Build for macOS
 npm run build:mac
 
 # Build for Linux
@@ -131,7 +131,7 @@ line-shuffler/
 ├── assets/                  # Static assets (logo, icons)
 ├── package.json             # Project configuration
 ├── README.md               # This file
-├── CONTRIBUTING.md         # Contribution guidelines  
+├── CONTRIBUTING.md         # Contribution guidelines
 ├── CHANGELOG.md            # Version history
 ├── LICENSE                 # MIT License
 └── .gitignore             # Git ignore rules
@@ -189,7 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Ibrahim Can Sancar**
-- GitHub: [@ibotoo](https://github.com/ibotoo)
+- GitHub: [@ibrahimsancar](https://github.com/ibrahimsancar)
 - Website: [Coming Soon]
 
 ## 🙏 Acknowledgments
@@ -203,7 +203,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/ibotoo/line-shuffler/issues) page
+1. Check the [Issues](https://github.com/ibrahimsancar/line-shuffler/issues) page
 2. Create a new issue with detailed information
 3. Include your OS, version, and steps to reproduce
 
@@ -220,4 +220,4 @@ If you encounter any issues or have questions:
 
 ---
 
-⭐ **Star this repository if you find it useful!** ⭐ 
+⭐ **Star this repository if you find it useful!** ⭐

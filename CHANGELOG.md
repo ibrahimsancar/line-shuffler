@@ -107,4 +107,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this 
 
 ## Support
 
-For questions or issues, please visit our [GitHub Issues](https://github.com/ibotoo/line-shuffler/issues) page. 
+For questions or issues, please visit our [GitHub Issues](https://github.com/ibrahimsancar/line-shuffler/issues) page.

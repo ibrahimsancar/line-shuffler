@@ -34,7 +34,7 @@ Gereksiz dosyalar temizlendi:
 ### Adım 2: Repository URL'sini Kopyalayın
 Repository oluştuktan sonra URL'yi kopyalayın:
 ```
-https://github.com/KULLANICI_ADINIZ/line-shuffler.git
+https://github.com/ibrahimsancar/line-shuffler.git
 ```
 
 ## 🎯 3. Local Git Kurulumu
@@ -49,8 +49,8 @@ cd "C:\Users\ibrah\Desktop\Satir_karisti"
 # Git repository'yi başlat
 git init
 
-# Remote repository'yi ekle (URL'yi kendinizinkiyle değiştirin)
-git remote add origin https://github.com/KULLANICI_ADINIZ/line-shuffler.git
+# Remote repository'yi ekle
+git remote add origin https://github.com/ibrahimsancar/line-shuffler.git
 
 # Mevcut branch'i main olarak ayarla
 git branch -M main
@@ -224,7 +224,7 @@ git push origin main
 
 ### Remote URL değiştirme:
 ```bash
-git remote set-url origin https://github.com/KULLANICI_ADINIZ/line-shuffler.git
+git remote set-url origin https://github.com/ibrahimsancar/line-shuffler.git
 ```
 
 ### Force push (dikkatli kullanın):
@@ -238,7 +238,7 @@ git push --force-with-lease origin main
 
 **Line Shuffler** projeniz artık GitHub'da! 🚀
 
-Repository URL: `https://github.com/KULLANICI_ADINIZ/line-shuffler`
+Repository URL: `https://github.com/ibrahimsancar/line-shuffler`
 
 ### 📈 Sonraki Aşamalar:
 - [ ] README.md'de GitHub repository URL'lerini güncelleyin

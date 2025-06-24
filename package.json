@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "A modern, feature-rich desktop application for shuffling text lines with advanced customization options",
   "main": "src/main.js",
-  "homepage": "https://github.com/ibotoo/line-shuffler",
+  "homepage": "https://github.com/ibrahimsancar/line-shuffler",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibotoo/line-shuffler.git"
+    "url": "git+https://github.com/ibrahimsancar/line-shuffler.git"
   },
   "bugs": {
-    "url": "https://github.com/ibotoo/line-shuffler/issues"
+    "url": "https://github.com/ibrahimsancar/line-shuffler/issues"
   },
   "scripts": {
     "start": "electron .",
@@ -50,7 +50,7 @@
   ],
   "author": {
     "name": "Ibrahim Can Sancar",
-    "url": "https://github.com/ibotoo"
+    "url": "https://github.com/ibrahimsancar"
   },
   "license": "MIT",
   "devDependencies": {
