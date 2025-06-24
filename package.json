@@ -1,0 +1,149 @@
+{
+  "name": "line-shuffler",
+  "version": "1.0.0",
+  "description": "A modern, feature-rich desktop application for shuffling text lines with advanced customization options",
+  "main": "src/main.js",
+  "homepage": "https://github.com/ibotoo/line-shuffler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibotoo/line-shuffler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ibotoo/line-shuffler/issues"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "build:all": "electron-builder --win --mac --linux",
+    "dist": "electron-builder --publish=never",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/ tests/ --ext .js",
+    "lint:fix": "eslint src/ tests/ --ext .js --fix",
+    "format": "prettier --write \"src/**/*.{js,json,css,html}\" \"tests/**/*.js\" \"*.{js,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,json,css,html}\" \"tests/**/*.js\" \"*.{js,json,md}\"",
+    "validate": "npm run lint && npm run format:check && npm test"
+  },
+  "keywords": [
+    "text",
+    "shuffle",
+    "lines",
+    "randomize",
+    "desktop",
+    "electron",
+    "fisher-yates",
+    "text-processing",
+    "line-shuffler",
+    "modern-ui",
+    "cross-platform",
+    "clipboard",
+    "file-processing",
+    "undo-redo",
+    "dark-theme"
+  ],
+  "author": {
+    "name": "Ibrahim Can Sancar",
+    "url": "https://github.com/ibotoo"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.6.4",
+    "sharp": "^0.34.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.1",
+    "jest": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "jsdom": "^23.0.1"
+  },
+  "build": {
+    "appId": "com.lineshuffler.app",
+    "productName": "Line Shuffler",
+    "copyright": "Copyright © 2025 Ibrahim Can Sancar",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "extraFiles": [
+      "README.md",
+      "LICENSE",
+      "CHANGELOG.md"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "publisherName": "Ibrahim Can Sancar"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.productivity"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "category": "Utility"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

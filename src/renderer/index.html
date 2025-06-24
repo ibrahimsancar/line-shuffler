@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Shuffler</title>
+    <link rel="icon" type="image/png" href="../../assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shuffle"></i>
+                    <h1>Line Shuffler</h1>
+                </div>
+                <!-- Theme toggle removed - dark theme only -->
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-grid">
+                <!-- Input Section -->
+                <section class="card input-section">
+                    <div class="card-header">
+                        <h2><i class="fas fa-edit"></i> Text Input</h2>
+                        <div class="header-actions">
+                            <button id="pasteFromClipboard" class="btn-secondary">
+                                <i class="fas fa-clipboard"></i>
+                                <span>Paste from Clipboard</span>
+                            </button>
+                            <button id="fileUpload" class="btn-secondary">
+                                <i class="fas fa-upload"></i>
+                                <span>Upload File</span>
+                            </button>
+                            <button id="clearInput" class="btn-secondary">
+                                <i class="fas fa-trash"></i>
+                                <span>Clear</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <textarea 
+                            id="inputText" 
+                            placeholder="Type your text here or upload a file...&#10;Each line will be processed as a separate line.&#10;&#10;This software is developed by Ibrahim Can Sancar."
+                            rows="12"
+                        ></textarea>
+                        <input type="file" id="fileInput" accept=".txt" style="display: none;">
+                        <div class="input-info">
+                            <span class="line-count">Line count: <strong id="lineCount">0</strong></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Configuration Section -->
+                <section class="card config-section">
+                    <div class="card-header">
+                        <h2><i class="fas fa-cog"></i> Shuffle Settings</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="config-group">
+                            <label>Fixed Position Lines</label>
+                            <div id="fixedLinesContainer">
+                                <!-- Fixed line entries will be added here -->
+                            </div>
+                            <button type="button" id="addFixedLine" class="btn-add">
+                                <i class="fas fa-plus"></i>
+                                <span>Add Fixed Line</span>
+                            </button>
+                            <small class="help-text">You can keep any number of lines in fixed positions</small>
+                        </div>
+
+                        <div class="config-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="allowDuplicates">
+                                <span class="checkmark"></span>
+                                Allow duplicate lines
+                            </label>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button id="shuffleBtn" class="btn-primary">
+                                <i class="fas fa-random"></i>
+                                <span>Shuffle</span>
+                            </button>
+                            <button id="previewBtn" class="btn-secondary">
+                                <i class="fas fa-eye"></i>
+                                <span>Preview</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Output Section -->
+                <section class="card output-section">
+                    <div class="card-header">
+                        <h2><i class="fas fa-list"></i> Shuffled Text</h2>
+                        <div class="header-actions">
+                            <button id="copyOutput" class="btn-secondary" disabled>
+                                <i class="fas fa-copy"></i>
+                                <span>Copy</span>
+                            </button>
+                            <button id="saveOutput" class="btn-secondary" disabled>
+                                <i class="fas fa-download"></i>
+                                <span>Save</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="outputArea" class="output-area">
+                            <div class="placeholder">
+                                <i class="fas fa-arrow-left"></i>
+                                <p>Use the settings on the left to shuffle your text</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p><i class="fas fa-code"></i> This software is developed by <a href="https://github.com/ibotoo/" target="_blank" rel="noopener noreferrer" class="developer-link"><strong>Ibrahim Can Sancar</strong></a></p>
+                <p class="version">Line Shuffler v1.0</p>
+            </div>
+        </footer>
+
+        <!-- Toast notifications removed for cleaner design -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
